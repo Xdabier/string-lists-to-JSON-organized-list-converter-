@@ -4,6 +4,11 @@ this small c program converts whatever string lists to json organized files
 To run the app, just run the terminal in the directory: bin/Debug/
 then run $ ./JSONconverter 
 
+//if it doesn't work then you may need to update it's execution rights, so you'll have to run this command in the same directory: $ chmod +x JSONconverter
+then run again this command: 
+
+$ ./JSONconverter
+__________________________________________________________________________________________________________________________________
 input/output example: 
 
 
