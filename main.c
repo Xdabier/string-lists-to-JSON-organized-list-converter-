@@ -20,15 +20,15 @@ int  CharacOrNot(char c) {
 }
 
 int HowManyLines(char* filename) {
-FILE* fp = fopen(filename, "r");
-int i = 0;
-char str[MAXCHAR];
+    FILE* fp = fopen(filename, "r");
+    int i = 0;
+    char str[MAXCHAR];
 
-while (fgets(str, MAXCHAR, fp) != NULL) {
-        i++;
-        }
-return i;
-fclose(fp);
+        while (fgets(str, MAXCHAR, fp) != NULL) {
+                i++;
+            }
+    return i;
+    fclose(fp);
 }
 
 int main()
@@ -39,6 +39,7 @@ FILE *fp, *fp1;
     char * pch;
     char filename[MAXCHAR];
     char filename1[MAXCHAR];
+
     printf("______________________________________ \n");
     printf("______________________________________ \n");
     printf("______________________________________ \n");
@@ -64,11 +65,14 @@ FILE *fp, *fp1;
 
     fp = fopen(filename, "r");
     fp1 = fopen(filename1, "w");
+
     if (fp == NULL){
         printf("Could not open file %s",filename);
         return 1;
     }
+
     int i = 0;
+
     if ( i == 0 ) fprintf(fp1, "{ \n");
 
     while (fgets(str, MAXCHAR, fp) != NULL) {
