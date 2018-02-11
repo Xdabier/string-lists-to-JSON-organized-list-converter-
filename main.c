@@ -6,7 +6,7 @@
 #define MAXCHAR 1000
 
 int  CharacOrNot(char c) {
-        char list[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ";
+        char list[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 \`~!@#$%^&*()_-+={[}}|\:;\"'<>.?/";
         int i = 0;
         int size;
                 size = strlen(list);
